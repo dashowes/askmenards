@@ -1,0 +1,1 @@
+This is a rails-powered app designed in 2016 by Jim Howes for Bob Chalmers. Not affiliated with Menards.
