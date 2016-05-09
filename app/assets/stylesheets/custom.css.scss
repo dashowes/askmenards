@@ -44,6 +44,17 @@ textarea {
     background-color: $lightGray;
     height: 430px;
 }
+.center4 {
+  background-color: $lightGray;
+  height: 315px;
+  p {
+    font-size: .85em;
+  }
+}
+.center5 {
+  background-color: $lightGray;
+  height: 515px;
+}
 /* typography */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -173,4 +184,15 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
