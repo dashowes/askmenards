@@ -1,0 +1,12 @@
+<div class="center2 jumbotron">
+    <h1>[LOGO GOES HERE]</h1>
+
+    <p>Hi <%= @user.name %>,</p>
+    
+    <p>
+        Welcome to AskMenards! Click the link below to activate your account:
+    </p>
+    
+    <%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
+</div>
