@@ -1,8 +1,14 @@
 <li id="question-<%= question.id %>">
     <%=link_to gravatar_for(question..user, size: 50), question.user %>
     <span class="user"><%=link_to question.user.name, question.user %></span>
-    <span class="content"><%= question.content %></span>
+    <span class="content">
+        <%= question.content %>
+        <%= image_tag.question.picture.url if question.picture? %>
+    </span>
     <span class="timestamp">
         Posted <%= time_ago_in_words(question.created_at) %> ago.
+        <% if current_user?(question.user) %>
+          <%= link_to "delete", question, method: :delete,
+                                       data: { confirm: "Are you sure?" } %>
     </span>
 </li>

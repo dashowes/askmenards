@@ -19,4 +19,13 @@ class QuestionsControllerTest < ActionController::TestCase
     end
     assert_redirected_to login_url
   end
+  
+  test "should redirect destroy for wrong question" do
+    log_in_as(users(:michael))
+    question = questions(:ants)
+    assert_no_difference 'Question.count' do
+      delete :destroy, id: question
+    end
+    assert_redirected_to root_url
+  end
 end

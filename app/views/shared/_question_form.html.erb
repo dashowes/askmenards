@@ -1,7 +1,10 @@
-<%= form_for(@question) do |f| %>
+<%= form_for(@question, html: { multipart: true}) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
     <%= f.text_area :content, placeholder: "Ask a question..." %>
   </div>
   <%= f.submit "Submit", class: "btn btn-default" %>
+  <span class="picture">
+    <%= f.file_field :picture %>
+  </span>
 <% end %>
