@@ -1,5 +1,5 @@
 <li id="question-<%= question.id %>">
-    <%=link_to gravatar_for(question..user, size: 50), question.user %>
+    <%=link_to gravatar_for(question.user, size: 50), question.user %>
     <span class="user"><%=link_to question.user.name, question.user %></span>
     <span class="content">
         <%= question.content %>
@@ -10,5 +10,6 @@
         <% if current_user?(question.user) %>
           <%= link_to "delete", question, method: :delete,
                                        data: { confirm: "Are you sure?" } %>
+        <% end %>
     </span>
 </li>

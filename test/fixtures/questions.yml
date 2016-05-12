@@ -1,48 +1,48 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 oscar:
-  content: "Mom… after all these years, God's not going to take a call from you. Go ahead, touch the cornballer. Heyyyyyy Uncle Father Oscar. I've got a nice hard cot with his name on it. You'd do that to your own brother? I said "cot." Michael was concerned that he was caught in a lie about his family. The family was concerned that they were being confronted by a woman they had clubbed, drugged, and left on a bench. Those are balls. What have we always said is the most important thing?"
-  created_at: <%= 10.minutes.ago %>
-  user: michael
-  
+content: "Mom… after all these years, God's not going to take a call from you. Go ahead, touch the cornballer. Heyyyyyy Uncle Father Oscar. I've got a nice hard cot with his name on it. You'd do that to your own brother? I said "cot." Michael was concerned that he was caught in a lie about his family. The family was concerned that they were being confronted by a woman they had clubbed, drugged, and left on a bench. Those are balls. What have we always said is the most important thing?"
+created_at: <%= 10.minutes.ago %>
+user: michael
+
 michael:
-  content: "I'm sorry, have we met?"
-  created_at: <%= 3.years.ago %>
-  user: michael
+content: "I'm sorry, have we met?"
+created_at: <%= 3.years.ago %>
+user: michael
 
 annhog:
-  content: "How do you know Steve Holt? Are you in AA? I'm foolish and I'm funny and I'm needy. Am I needy? Are you sure I'm not needy? 'Cause I feel needy sometimes. You boys know how to shovel coal? She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. We need a name. Maybe 'Operation Hot Mother'. The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON. Oh, like when they say 'poofter' to mean 'tourist', yes. Annhog's coming?"
-  created_at: <%= 2.hours.ago %>
-  user: michael
+content: "How do you know Steve Holt? Are you in AA? I'm foolish and I'm funny and I'm needy. Am I needy? Are you sure I'm not needy? 'Cause I feel needy sometimes. You boys know how to shovel coal? She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. We need a name. Maybe 'Operation Hot Mother'. The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON. Oh, like when they say 'poofter' to mean 'tourist', yes. Annhog's coming?"
+created_at: <%= 2.hours.ago %>
+user: michael
 
 buster:
-  content: "What's gotten into you? Have you been eating cheese?"
-  created_at: <%= Time.zone.now %>
-  user: michael
+content: "What's gotten into you? Have you been eating cheese?"
+created_at: <%= Time.zone.now %>
+user: michael
 
 <% 30.times do |n| %>
 question_<%= n %>:
-  content: <%= Faker::Lorem.sentence(5) %>
-  created_at: <%= 42.days.ago %>
-  user: michael
+content: <%= Faker::Lorem.sentence(5) %>
+created_at: <%= 42.days.ago %>
+user: michael
 <% end %>
 
 ants:
-  content: "Oh, is that what you want? Because that's how you get ants!"
-  created_at: <%= 2.years.ago %>
-  user: archer
+content: "Oh, is that what you want? Because that's how you get ants!"
+created_at: <%= 2.years.ago %>
+user: archer
 
 zone:
-  content: "Danger zone!"
-  created_at: <%= 3.days.ago %>
-  user: archer
+content: "Danger zone!"
+created_at: <%= 3.days.ago %>
+user: archer
 
 tone:
-  content: "I'm sorry. Your words made sense, but your sarcastic tone did not."
-  created_at: <%= 10.minutes.ago %>
-  user: lana
+content: "I'm sorry. Your words made sense, but your sarcastic tone did not."
+created_at: <%= 10.minutes.ago %>
+user: lana
 
 van:
-  content: "Dude, this van's, like, rolling probable cause."
-  created_at: <%= 4.hours.ago %>
-  user: lana
+content: "Dude, this van's, like, rolling probable cause."
+created_at: <%= 4.hours.ago %>
+user: lana
